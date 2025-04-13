@@ -1,8 +1,17 @@
+/*
+  This program is a coding trial, taking inspiration from *Gadsby* —  
+  a story known for avoiding that most common Latin glyph.
+
+  Goals and limits:
+  - No form of that fifth Latin symbol may occur in our program.
+  - So - you may not pull in standard lib stuff (no #<that word>).
+  - To talk to your OS, raw sys calls must stand in.
+  - No C syntax words that contain that glyph too!
+  This is a fun but tricky trial in constraint and clarity.
+*/
+
 // This function prints to stdout.
 int puts(const char *);
-
-// This function prints a char to stdout.
-int putc(int, void *);
 
 // This function calls linux syscall
 long syscall(long num, ...);
